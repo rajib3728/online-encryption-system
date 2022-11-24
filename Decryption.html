@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decryption</title>
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <style>
+       body
+        {
+            background-image: url('img6.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size:cover;
+        }
+        .st1
+        {
+            color:coral;
+        }
+        .st2
+        {
+            width: 400px;
+            height:200px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: coral;
+            border-radius: 2px;
+        }
+
+        
+.st3
+{
+    color:black;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:white;
+    border-radius: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.st3:hover
+{
+    box-shadow: 8px 8px 3px grey; 
+}
+    </style>
+</head>
+<body>
+    <center>
+        <h1 class="st1">Do your Decryption here</h1>
+        <label class="st1">Enter the given code:</label>
+        <input type="text" id="val1">
+        <br>
+        <br>
+        <label class="st1">Enter your text here</label>
+        <br>
+        <br>
+        <textarea class="st2" id="val2"></textarea>
+        <br>
+        <br>
+        <button class="st3" onclick="fun1()">submit</button>
+        <h3 class="st1">find your result below:<button class="st3" onclick="fun2()">copy text</button></h3>
+        <div style="width:80%;height:auto ;">
+        <p id="text1" style="display: inline-block;width: auto; height:auto;color:black;background-color: aliceblue; padding:3px"></p>
+    </div>
+    </center>
+    <script>
+        function fun1()
+        {
+            var x1=document.getElementById("val1").value;
+            var x2=document.getElementById("val2").value;
+            if (x1=="" || x2=="" || x1.length!=26)
+            {
+                alert("code or text is missing or wrong code");
+            }
+            else
+            {
+            var y=x1.split("")
+            var y1=y[0]
+            var y2=y[1]
+            var y3=y[2]
+            var y4=y[3]
+           var  y5=y[4]
+           var  y6=y[5]
+            var y7=y[6]
+           var y8=y[7]
+           var  y9=y[8]
+            var y10=y[9]
+          var y11=y[10]
+            var y12=y[11]
+          var  y13=y[12]
+           var  y14=y[13]
+            var y15=y[14]
+            var y16=y[15]
+         var y17=y[16]
+           var  y18=y[17]
+         var y19=y[18]
+           var  y20=y[19]
+             
+            var y21=y[20]
+            var y22=y[21]
+           var  y23=y[22]
+           var  y24=y[23]
+           var  y25=y[24]
+           var  y26=y[25] 
+             
+
+
+ 
+            var l=x2.split('')
+            var res=''
+
+            for(var i=0;i<x2.length;i++)
+            {
+                if(l[i]=='a')
+                {
+                    res=res+y1
+                }
+                else if(l[i]=='b')
+                {
+                    
+                     res=res+y2
+                }
+                else if(l[i]=='c')
+                {
+                    res=res+y3
+                }
+                else if(l[i]=='d')
+                {
+                    res=res+y4
+                }
+                else if(l[i]=='e')
+                {
+                    res=res+y5
+                }
+                else if(l[i]=='f')
+                {
+                    res=res+y6
+                }
+                else if(l[i]=='g')
+                {
+                    res=res+y7
+                }
+                else if(l[i]=='h')
+                {
+                    res=res+y8
+                }
+                else if(l[i]=='i')
+                {
+                    res=res+y9
+                }
+                else if(l[i]=='j')
+                {
+                    res=res+y10
+                }
+                else if(l[i]=='k')
+                {
+                    res=res+y11
+                }
+                else if(l[i]=='l')
+                {
+                    res=res+y12
+                }
+                else if(l[i]=='m')
+                {
+                    res=res+y13
+                }
+                else if(l[i]=='n')
+                {
+                    res=res+y14
+                }
+                else if(l[i]=='o')
+                {
+                    res=res+y15
+                }
+                else if(l[i]=='p')
+                {
+                    res=res+y16
+                }
+                else if(l[i]=='q')
+                {
+                    res=res+y17
+                }
+                else if(l[i]=='r')
+                {
+                    res=res+y18
+                }
+                else if(l[i]=='s')
+                {
+                    res=res+y19
+                }
+                else if(l[i]=='t')
+                {
+                    res=res+y20
+                }
+                else if(l[i]=='u')
+                {
+                    res=res+y21
+                }
+                else if(l[i]=='v')
+                {
+                    res=res+y22
+                }
+                else if(l[i]=='w')
+                {
+                    res=res+y23
+                }
+                else if(l[i]=='x')
+                {
+                    res=res+y24
+                }
+                else if(l[i]=='y')
+                {
+                    res=res+y25
+                }
+                else if(l[i]=='z')
+                {
+                    res=res+y26
+                }
+                else 
+                {
+                    res=res+' '
+                }
+            }
+            
+         /*   for(var i=0;i<x2.length;i++)
+            {
+                if(l[i]=='a')
+                {
+                    res=res.join(y1)
+                }
+                else if(l[i]=='b')
+                {
+                    res=res.join(y2)
+                }
+                else if(l[i]=='c')
+                {
+                    res=res.join(y3)
+                }
+                else if(l[i]=='d')
+                {
+                    res=res.join(y4)
+                }
+                else if(l[i]=='e')
+                {
+                    res=res.join(y5)
+                }
+                else if(l[i]=='f')
+                {
+                    res=res.join(y6)
+                }
+                else if(l[i]=='g')
+                {
+                    res=res.join(y7)
+                }
+                else if(l[i]=='h')
+                {
+                    res=res.join(y8)
+                }
+                else if(l[i]=='i')
+                {
+                    res=res.join(y9)
+                }
+                else if(l[i]=='j')
+                {
+                    res=res.join(y10)
+                }
+                else if(l[i]=='k')
+                {
+                    res=res.join(y11)
+                }
+                else if(l[i]=='l')
+                {
+                    res=res.join(y12)
+                }
+                else if(l[i]=='m')
+                {
+                    res=res.join(y13)
+                }
+                else if(l[i]=='n')
+                {
+                    res=res.join(y14)
+                }
+                else if(l[i]=='o')
+                {
+                    res=res.join(y15)
+                }
+                else if(l[i]=='p')
+                {
+                    res=res.join(y16)
+                }
+                else if(l[i]=='q')
+                {
+                    res=res.join(y17)
+                }
+                else if(l[i]=='r')
+                {
+                    res=res.join(y18)
+                }
+                else if(l[i]=='s')
+                {
+                    res=res.join(y19)
+                }
+                else if(l[i]=='t')
+                {
+                    res=res.join(y20)
+                }
+                else if(l[i]=='u')
+                {
+                    res=res.join(y21)
+                }
+                else if(l[i]=='v')
+                {
+                    res=res.join(y22)
+                }
+                else if(l[i]=='w')
+                {
+                    res=res.join(y23)
+                }
+                else if(l[i]=='x')
+                {
+                    res=res.join(y24)
+                }
+                else if(l[i]=='y')
+                {
+                    res=res.join(y25)
+                }
+                else if(l[i]=='z')
+                {
+                    res=res.join(y26)
+                }
+                else
+                {
+                    res=res.join(' ')
+                }
+              
+            }*/
+            document.getElementById("text1").innerText=res;
+            
+            }
+
+
+            
+              /*    function replaceAll(string, search, replace) {
+            return string.split(search).join(replace);
+          }
+          var op1=replaceAll(x2, y[0], 'a');
+          var op2=replaceAll(op1, y[1], 'b');
+          var op3=replaceAll(op2, y[2], 'c');
+          var op4=replaceAll(op3, y[3], 'd');
+         var op5=replaceAll(op4, y[4], 'e');
+         var op6= replaceAll(op5, y[5], 'f');
+         var op7=  replaceAll(op6, y[6], 'g');
+         var op8= replaceAll(op7, y[7], 'h');
+         var op9= replaceAll(op8, y[8], 'i');
+         var op10= replaceAll(op9, y[9], 'j');
+          var op11=replaceAll(op10, y[10], 'k');
+          var op12=replaceAll(op11, y[11], 'l');
+         var op13= replaceAll(op12, y[12], 'm');
+          var op14=replaceAll(op13, y[13], 'n');
+        var op15=replaceAll(op14, y[14], 'o');
+         var op16= replaceAll(op15, y[15], 'p');
+         var op17= replaceAll(op16, y[16], 'q');
+         var op18= replaceAll(op17, y[17], 'r');
+        var op19 = replaceAll(op18, y[18], 's');
+        var op20=  replaceAll(op19, y[19], 't');
+        var op21 = replaceAll(op20, y[20], 'u');
+        var op22=  replaceAll(op21, y[21], 'v');
+        var op23 = replaceAll(op22, y[22], 'w');
+        var op24=  replaceAll(op23, y[23], 'x');
+        var op25 = replaceAll(op24, y[24], 'y');
+        var op26 = replaceAll(op25, y[25], 'z');
+        document.getElementById("text1").innerText=op26;*/
+
+
+    /*    var Obj = {
+             y0:'a',
+             y1: 'b',
+             y2:'c',
+             y3:'d',
+             y4:'e',
+             y5:'f',
+             y6:'g',
+             y7:'h',
+             y8:'i',
+             y9:'j',
+             y10:'k',
+             y11:'l',
+             y12:'m',
+             y13:'n',
+             y14:'o',
+             y15:'p',
+             y16:'q',
+             y17:'r',
+             y18:'s',
+             y19:'t',
+             y20:'u',
+             y21:'v',
+             y22:'w',
+             y23:'x',
+             y24:'y',
+             y25:'z',
+          };
+          document.getElementById("text1").innerHTML = x.replace(/y[0]|y[1]|y[2]|y[3]|y[4]|y[5]|y[6]|y[7]|y[8]|y[9]|y[10]|y[11]|y[12]|y[13]|y[14]|y[15]|y[16]|y[17]|y[18]|y[19]|y[20]|y[21]|y[22]|y[23]|y[24]/gi,  function(matched){
+                  return Obj[matched];
+              });*/
+        }
+
+
+        function fun2()
+{
+    var x=document.getElementById("val2").value
+    if(x=="")
+    {
+        alert("please provide text to encrypt");
+    }
+    else{
+        let text = document.getElementById("text1").innerText;
+        navigator.clipboard.writeText(text)
+          .then(() => {
+            alert('Text copied to clipboard');
+          })
+          .catch(err => {
+            alert('Error in copying text: ', err);
+          });
+        
+    }
+
+}
+    </script>
+</body>
+</html>
